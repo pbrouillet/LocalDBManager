@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalDBManager", "LocalDBManager\LocalDBManager.csproj", "{0DE41B0A-9E2B-49E0-8326-FA2D63D9A8C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{CF3DD286-EEDD-4770-ABEE-919724A1319C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DE41B0A-9E2B-49E0-8326-FA2D63D9A8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE41B0A-9E2B-49E0-8326-FA2D63D9A8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE41B0A-9E2B-49E0-8326-FA2D63D9A8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE41B0A-9E2B-49E0-8326-FA2D63D9A8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ACC61B7-BB5C-4E14-866F-92A362EE907D}
+	EndGlobalSection
+EndGlobal

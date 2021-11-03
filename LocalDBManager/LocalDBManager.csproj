@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <!--<TargetFramework>net5.0</TargetFramework>-->
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Resources\microsoft-sql-server.ico</ApplicationIcon>
+
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <!--<PublishReadyToRun>true</PublishReadyToRun>-->
+
+	  <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+
+  </PropertyGroup>
+
+	<ItemGroup>
+		<!-- .NET Runtime -->
+		<!-- PrivateAssets="all" here doesn't do anything, this reference is always added  -->
+		<FrameworkReference Include="Microsoft.NETCore.App" />
+
+		<!-- Windows Desktop -->
+		<!-- PrivateAssets="all" - non-transitive dependency -->
+		<FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms " PrivateAssets="all" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <Content Include="microsoft-sql-server.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MartinCostello.SqlLocalDb" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
